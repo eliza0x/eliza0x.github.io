@@ -7,7 +7,7 @@ div
             header
                 h1 {{ currentPage.title }}
                 div.chip 
-                    img(:src="\"/static/images/\"+currentPage.auther+\".png\"" alt="Auther ")
+                    img(:src="\"/static/images/\"+currentPage.auther+\".jpeg\"" alt="Auther ")
                     | auther: {{ currentPage.auther }}
                 div(v-for="tag in currentPage.tags").chip 
                     a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}

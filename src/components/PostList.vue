@@ -7,7 +7,7 @@
             .card-content
               span.card-title.article-title {{ article.title }}
               div.chip 
-                img(:src="\"/static/images/\"+article.auther+\".png\"" alt="Auther ")
+                img(:src="\"/static/images/\"+article.auther+\".jpeg\"" alt="Auther ")
                 | auther: {{ article.auther }}
               div(v-for="tag in article.tags").chip 
                 a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}

@@ -2,7 +2,7 @@
 main 
   .parallax-container.parallax-height-top
     .parallax
-      img(src="/static/images/parallax1.jpg")
+      img(src="/static/images/parallax1.png")
   .container
     .row
       .col.s12
