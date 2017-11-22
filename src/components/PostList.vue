@@ -26,10 +26,10 @@ export default {
   },
   computed: {
     articleList () {
-    var vm = this
-    return articleInfo
-      .slice(0, Math.min(vm.count, articleInfo.length))
-      .filter((element, index, array) => { return !(vm.tagFilter) || element.tags.indexOf(vm.tag) >= 0 })
+      var vm = this
+      return articleInfo
+        .slice(0, Math.min(vm.count, articleInfo.length))
+        .filter((element, index, array) => { return !(vm.tagFilter) || element.tags.indexOf(vm.tag) >= 0 })
     }
   }
 }

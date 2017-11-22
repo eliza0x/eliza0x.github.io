@@ -2,7 +2,7 @@
 main 
   .container
     .row
-      .col.s12.m9
+      .col.s12
         main
           h3 Tag: {{ tag }} のついているページ
           postlist-components(:count="100000", :tagFilter="true", :tag="tag")

@@ -10,7 +10,7 @@ div
                     img(:src="\"/static/images/\"+currentPage.auther+\".png\"" alt="Auther ")
                     | auther: {{ currentPage.auther }}
                 div(v-for="tag in currentPage.tags").chip 
-                    a(:href="\"/#/tags/\"+tag").tag {{ tag }}
+                    a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}
                 p date: {{ currentPage.date }}
 
             section(v-html="html")
