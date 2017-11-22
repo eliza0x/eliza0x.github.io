@@ -15,9 +15,9 @@ Vue.component('postlist-components', PostList)
 
 export default {
   name: 'TagPageListPage',
-  data () {
-    return {
-      tag: this.$route.params.id
+  computed: {
+    tag () {
+      return this.$route.params.id
     }
   }
 }

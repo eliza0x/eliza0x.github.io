@@ -22,14 +22,15 @@ export default {
   name: 'PostList',
   data () {
     return {
-      articleList: []
     }
   },
-  created () {
+  computed: {
+    articleList () {
     var vm = this
-    this.articleList = articleInfo
+    return articleInfo
       .slice(0, Math.min(vm.count, articleInfo.length))
       .filter((element, index, array) => { return !(vm.tagFilter) || element.tags.indexOf(vm.tag) >= 0 })
+    }
   }
 }
 </script>
