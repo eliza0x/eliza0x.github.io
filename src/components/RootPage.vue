@@ -2,9 +2,9 @@
 main 
   .parallax-container.parallax-height-top
     .parallax
-      img(src="/static/images/parallax1.png")
-  .container
-    .row
+      img(src="/static/images/parallax1.jpeg")
+  .section.white
+    .container.row
       .col.s12
         main
           h3 最近の投稿 
@@ -13,7 +13,7 @@ main
             a(href="/#/posts").grey-text.text-darken-2 And more ...
   .parallax-container.parallax-height-bottom
     .parallax
-      img(src="/static/images/parallax2.jpg")
+      img(src="/static/images/parallax2.jpeg")
 </template>
 
 <script>
