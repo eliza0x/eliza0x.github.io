@@ -38,9 +38,13 @@ p
   font-size 1.1rem
 
 .parallax-height-top
-  height 400px
+  height 200px
+  @media (min-width: 600px)
+    height 400px
 
 .parallax-height-bottom
-  height 200px
+  height 100px
+  @media (min-width: 600px)
+    height 200px
 </style>
 

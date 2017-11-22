@@ -18,10 +18,10 @@ Vue.component('header-components', Header)
 Vue.component('footer-components', Footer)
 </script>
 
-<style>
-h1:before, h2:before, h3:before {
-    content: "# ";
-    color: #e65100;
-}
-
+<style lang="stylus">
+for i in (1..5)
+  .h{i}
+    &::before
+      content "# "
+      color   #e65100
 </style>
