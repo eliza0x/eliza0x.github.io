@@ -37,6 +37,13 @@ p
   margin 1rem 0rem
   font-size 1.1rem
 
+.parallax-container img
+  object-fix cover
+  @media (max-width: 1000px)
+    width 1000px
+  @media (max-width: 600px)
+    width 600px
+
 .parallax-height-top
   height 200px
   @media (min-width: 600px)
