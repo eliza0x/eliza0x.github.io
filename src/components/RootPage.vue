@@ -5,10 +5,12 @@ main
       img(src="/static/images/parallax1.jpg")
   .container
     .row
-      .col.s12.m9
+      .col.s12
         main
           h3 最近の投稿 
           postlist-components(:count=5, :tagFilter=false)
+          h5 
+            a(href="/#/posts").grey-text.text-darken-2 And more ...
   .parallax-container.parallax-height-bottom
     .parallax
       img(src="/static/images/parallax2.jpg")

@@ -2,8 +2,8 @@
 div 
   .container
     .row
-      .col.s12.m9
-        main
+      .col.s12
+        main#article
             header
                 h1 {{ currentPage.title }}
                 div.chip 
@@ -13,7 +13,7 @@ div
                     a(:href="\"/#/tags/\"+tag").tag {{ tag }}
                 p date: {{ currentPage.date }}
 
-            section(v-html="html")#article
+            section(v-html="html")
 </template>
 
 <script>
@@ -34,8 +34,7 @@ export default {
   },
   computed: {
     markdownURI () {
-      var reg = /(.*)(?:\.([^.]+$))/
-      return this.articleURI.match(reg)[1] + '.md'
+      return this.currentPage.file
     }
   },
   created () {
@@ -46,12 +45,22 @@ export default {
         // eslint-disable-next-line
         return '<pre class="card"><code class="card-content hljs">' + hljs.highlightAuto(code).value + '</code></pre>'
       }
+      renderer.image = function (href, title, text) {
+        return '<div class="card"><div class="card-image"><img src="' + href + '"></div></div>'
+      }
       marked.setOptions({
         renderer: renderer
       })
     })()
 
     var vm = this
+    this.currentPage = articleInfo.find((element, index, array) => {
+      if (element.uri === vm.currentURI) {
+        return true
+      } else {
+        return false
+      }
+    })
 
     axios.get(this.markdownURI)
       .then(function (response) {
@@ -62,14 +71,6 @@ export default {
       })
     $(document).ready(function () {
       $('.parallax').parallax()
-    })
-
-    this.currentPage = articleInfo.find((element, index, array) => {
-      if (element.uri === vm.currentURI) {
-        return true
-      } else {
-        return false
-      }
     })
   }
 }

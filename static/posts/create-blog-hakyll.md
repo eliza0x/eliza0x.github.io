@@ -1,8 +1,15 @@
+
+<div class="card-panel red darken-4 white-text">
+    この記事は古くなっています。現在このブログはJavascriptで生成されています。
+</div>
+
 以前ははてなブログなどで記事は書いていたんですが、どうしてもモチベーションも保てず、なんだか嫌になってブログを削除してしまいました。
 しかし、やっぱり参加したイベント等の記事は書きたい。それでせっかくブログを作るならもっと自由にカスタマイズできる環境であればより楽しく続けられると思ったので、HakyllとShakespeare、そしてClayを使い、私の好きなHaskellでブログを作りました。
 
 記事をかいた当時のこのページのソースコードは[ここ](https://github.com/eliza0x/eliza0x.github.io/tree/bd964b8f01908b93c555d528bd020cb2060975bd)に公開しています。
 また、最新版は[ここ](https://github.com/eliza0x/eliza0x.github.io)に公開しています。
+
+<!--more-->
 
 ## Hakyllでウェブサイトの生成
 
@@ -86,7 +93,7 @@ HakyllとHamletの連携が面倒だったので、薄いラッパーを書き�
 match "templates/*.hamlet" $ compile hamlTemplateCompiler
 ```
 
-## Clay射撃
+## Clay
 
 ~~CSSはCassiusを利用して[Skeleton](http://getskeleton.com/)や[Milligram](https://milligram.github.io/)を参考にしつつもがんばって一から書きました。~~
 
@@ -185,4 +192,3 @@ Github Pagesで独自ドメインを利用するために参考にしたもの�
 - [Github Pagesの使い方](http://qiita.com/mikakane/items/87c8f676815da4e5ac04)
 - [GitHub Pagesで静的なサイトを公開し、独自ドメインを設定する](http://qiita.com/tiwu_official/items/d7fb6c493ed5eb9ee4fc)
 - [カスタムドメインの GitHub Pages で HTTPS を使う](http://qiita.com/superbrothers/items/95e5723e9bd320094537)
-
