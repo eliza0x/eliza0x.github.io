@@ -13,7 +13,7 @@
     "auther": "eliza",
     "date": "2017/7/17", 
     "tags":["haskell","programming"],
-    "uri":"/#/posts/shell-sort-haskll.html",
+    "uri":"/#/posts/shell-sort-haskell.html",
     "file":"/static/posts/shell-sort-haskell.md",
     "description": "Haskellでシェルソートを書きました。"
   },
