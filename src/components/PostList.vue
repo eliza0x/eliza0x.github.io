@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     ul
-      li(v-for="article in articleList")
+      li(id="article-list" v-for="article in articleList")
         a(:href="article.uri").clear-color
           .card.grey.lighten-4
             .card-content
