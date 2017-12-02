@@ -92,7 +92,7 @@ FPGAは上記の引用のとおり、わたしたち開発者が必要に応じ�
 
 以下はバグらせて動かないので実機でデバッグしている様子です。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CfU2q0g7-5Q" frameborder="0" allowfullscreen></iframe>
+<iframe class="card" width="560" height="315" src="https://www.youtube.com/embed/CfU2q0g7-5Q" frameborder="0" allowfullscreen></iframe>
 
 ## 開発の流れ
 
@@ -133,6 +133,8 @@ FPGAは上記の引用のとおり、わたしたち開発者が必要に応じ�
 > にんげんがさき　Verilogがあと  
 
 来週は簡単な進捗報告の記事をかきます。
+
+私は本日OIT Advent Calender 2017で『[ブログを書くためにブログを作った](/#/posts/create-blog-vuejs.html)』もかいているので、もしよかったらそっちも読んでくれるとうれしいです。
 
 明日の記事はちげくんの[電気科PV編集ファイル解説(1)]()です。楽しみですね。
 
