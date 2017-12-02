@@ -1,5 +1,23 @@
 [
   {
+    "title": "CPUを作ったので自慢する",
+    "auther": "eliza",
+    "date": "2017/12/3", 
+    "tags":["oit","kosen14s","cpu","programming","blog"],
+    "uri":"/#/posts/create-cpu.html",
+    "file":"/static/posts/create-cpu.md",
+    "description": "楽しそうなのでCPUを作ってみました。とりあえず一段落ついたので自慢します。"
+  },
+  {
+    "title": "Vue.jsでブログを作り直した",
+    "auther": "eliza",
+    "date": "2017/12/3", 
+    "tags":["oit","programming","blog"],
+    "uri":"/#/posts/create-blog-vuejs.html",
+    "file":"/static/posts/create-blog-vuejs.md",
+    "description": "ブログを書くためにブログを作り直しました。"
+  },
+  {
     "title": "プログラミングコンテストにはじめて参加した",
     "auther": "eliza",
     "date": "2017/5/14", 
@@ -30,7 +48,7 @@
     "title": "Haskellでブログを作った",
     "auther": "eliza",
     "date": "2017/03/23", 
-    "tags":["programming","haskell","hakyll"],
+    "tags":["programming","haskell","hakyll","blog"],
     "uri":"/#/posts/create-blog-hakyll.html",
     "file":"/static/posts/create-blog-hakyll.md",
     "description": "Haskellでブログを作った時の話です。"

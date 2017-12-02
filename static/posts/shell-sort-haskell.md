@@ -1,14 +1,6 @@
----
-title: Haskellでシェルソートを書く
-date: 2017-07-17
-tags: haskell, programming
----
-
 以前書いたバブルソートは遅いので、シェルソートを書いてみました。
 
 まずはじめに普通の挿入ソートを書きます。
-
-<!--more-->
 
 ```haskell
 main :: IO ()
