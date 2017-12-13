@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="いらいざ(@Eliza_0x)">
+  <meta name="dcterms.date" content="2017-10-07">
+  <title>自作言語を自作CPUでうご</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">自作言語を自作CPUでうご</h1>
+  <p class="author">いらいざ(<span class="citation" data-cites="Eliza">@Eliza</span>_0x)</p>
+  <p class="date">2017-10-07</p>
+</section>
+
+<section id="かしたいだけの人生だった" class="slide level2">
+<h2>かしたいだけの人生だった</h2>
+</section>
+<section id="section" class="slide level2" data-background="kosen14s.png">
+<h2></h2>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<figure>
+<img src="haskell.png" />
+</figure>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<figure>
+<img src="neovim.png" />
+</figure>
+</section>
+<section id="はじめます" class="slide level2">
+<h2>はじめます</h2>
+</section>
+<section id="自作言語を自作cpuでうごかしたいだけの人生だった" class="slide level2">
+<h2>自作言語を自作CPUでうごかしたいだけの人生だった</h2>
+</section>
+<section id="結論-間に合いませんでした" class="slide level2">
+<h2>結論: 間に合いませんでした</h2>
+<ul>
+<li>CPUはエミュレータのみで実機では未確認</li>
+<li>このエミュレータ上でコンパイラをつくった</li>
+<li>自作言語は取り敢えず動いた</li>
+<li>辛い人生だった</li>
+</ul>
+</section>
+<section id="閑話休題" class="slide level2">
+<h2>閑話休題</h2>
+</section>
+<section id="q.-プログラミング言語ってどうやってつくるの" class="slide level2">
+<h2>Q. プログラミング言語ってどうやってつくるの</h2>
+</section>
+<section id="a.-木にしてからﾓｸﾞﾓｸﾞﾓｸﾞﾓｸﾞﾓｸﾞﾓｸﾞはい" class="slide level2">
+<h2>A. 木にしてからﾓｸﾞﾓｸﾞﾓｸﾞﾓｸﾞﾓｸﾞﾓｸﾞ、はい</h2>
+</section>
+<section id="section-3" class="slide level2">
+<h2>?????????</h2>
+</section>
+<section id="ちゃんと説明します" class="slide level2">
+<h2>ちゃんと説明します</h2>
+</section>
+<section id="アセンブリ" class="slide level2">
+<h2>アセンブリ</h2>
+<ul>
+<li>CPUが直接理解できる命令</li>
+<li><code>add $1 $2 $3</code></li>
+<li><code>jmp LABEL</code></li>
+<li>授業でCASLをやったことのあるひともいらっしゃるんじゃないでしょうか？</li>
+</ul>
+</section>
+<section id="アセンブリ-1" class="slide level2">
+<h2>アセンブリ</h2>
+<ul>
+<li>わたしたちが書いたプログラムからアセンブリを生成するのが目標</li>
+<li>『適切に中間表現を定めてやればわりといける』</li>
+<li>私の作った言語では</li>
+<li>パース→アルファ変換→型推論→K正規化(嘘)→A正規化(嘘)→レジスタ割り当て→（ここで適当な変換をかましている）→アセンブリ生成 をしているのでひとつずつ解説していきます</li>
+</ul>
+</section>
+<section id="パース" class="slide level2">
+<h2>パース</h2>
+<ul>
+<li>プログラムのままでは処理するのが大変…</li>
+<li>木構造に変換する</li>
+<li>木構造？</li>
+</ul>
+</section>
+<section id="パース-1" class="slide level2">
+<h2>パース</h2>
+<ul>
+<li><code>main = 1 + 2 * 3 / 4;</code></li>
+<li>みたいなプログラムがありますね。これは優先順位があるので</li>
+<li><code>main = 1 + ((2 * 3) / 4)</code></li>
+<li>みたいにしても問題ないですよね？ここから各演算子を関数みたいに前にもってきます</li>
+<li><code>main = (+ 1 (/ (* 2 3) 4)</code></li>
+<li>みたいにへんかんします</li>
+</ul>
+</section>
+<section id="パース-2" class="slide level2">
+<h2>パース</h2>
+<ul>
+<li><code>main = (+ 1 (/ (* 2 3) 4)</code></li>
+<li>これはこんなグラフ構造としても理解できますね <img src="tree.jpg" /></li>
+</ul>
+</section>
+<section id="アルファ変換" class="slide level2">
+<h2>アルファ変換</h2>
+<pre><code>main n = let
+   n = 5;
+   in n;</code></pre>
+<p>このプログラムでのnは場所によって意味が変わってくる→だからいいかんじに変換して一意な名前をつけてしょりしやすくしたい</p>
+</section>
+<section id="アルファ変換-1" class="slide level2">
+<h2>アルファ変換</h2>
+<pre><code>main n1 = let
+    n2 = 5
+    in n2;</code></pre>
+<p>こんなかんじ</p>
+</section>
+<section id="型推論" class="slide level2">
+<h2>型推論</h2>
+<p>こんなことしませんか</p>
+<pre><code>&quot;hoge&quot; + 5</code></pre>
+<p>これ、ヤバイですよね</p>
+</section>
+<section id="型推論-1" class="slide level2">
+<h2>型推論</h2>
+<p>こんなかんじのバグをコンパイル時に排除したい</p>
+<p>1 * 2 + true</p>
+<ul>
+<li>の両辺には数値型しか来てはいけないのでこれはおかしい！等の規則を用いて演繹します。</li>
+</ul>
+</section>
+<section id="k正規化" class="slide level2">
+<h2>K正規化</h2>
+<p>アセンブリでは一度に一つの命令しか処理できない</p>
+<p>1 + 2 * 3</p>
+</section>
+<section id="k正規化疑" class="slide level2">
+<h2>K正規化(疑)</h2>
+<pre><code>b = 2 * 3
+a = 1 + b</code></pre>
+<p>内部的にはbやaではなくて、uuidといって絶対に衝突しない乱数のようなものを振っている</p>
+</section>
+<section id="a正規化疑" class="slide level2">
+<h2>A正規化(疑)</h2>
+<p>K正規化をすると数式等は展開できる、けどif式やlet文は展開できない→アセンブリを生成する時は邪魔</p>
+</section>
+<section id="a正規化疑-1" class="slide level2">
+<h2>A正規化(疑)</h2>
+<pre><code>main = if true
+        then 1 * 2 + 3
+        else 2 * 3 + 4; </code></pre>
+</section>
+<section id="なんかいろいろな処理" class="slide level2">
+<h2>なんかいろいろな処理</h2>
+<p>アセンブリに変換しやすいようにif文を分解したり匿名関数に名前をあたえたりする</p>
+<pre><code>main = if true 
+        then 1 * 2 + 3
+
+else = 2 * 3 + 4</code></pre>
+</section>
+<section id="レジスタ割付" class="slide level2">
+<h2>レジスタ割付</h2>
+<p>プログラム上では変数は無限に宣言できる</p>
+<p>CPU内で使えるデータには限りがある</p>
+<p>生きている変数をいいかんじにかんりして変数と対応させる</p>
+</section>
+<section id="アセンブリ生成" class="slide level2">
+<h2>アセンブリ生成</h2>
+<p>できるだけアセンブリに近づけた内部構造からアセンブリを生成する</p>
+</section>
+<section id="アセンブリ生成-1" class="slide level2">
+<h2>アセンブリ生成</h2>
+<p>ここまでいい感じに内部構造を変換しているので割と簡単にアセンブリは生成できる</p>
+</section>
+<section id="アセンブリ-2" class="slide level2">
+<h2>アセンブリ？？？？？？</h2>
+</section>
+<section id="アセンブリわからん" class="slide level2">
+<h2>アセンブリわからん</h2>
+</section>
+<section id="cpuつくるか" class="slide level2">
+<h2>CPUつくるか</h2>
+</section>
+<section id="どうやってcpuつくるん" class="slide level2">
+<h2>どうやってCPUつくるん？</h2>
+<ul>
+<li>パタヘネを読んでCPUがどんなかんじで動くか理解する</li>
+<li>システム記述言語といって論理回路を生成できるプログラミング言語みたいなやつをつかう</li>
+<li>やるだけ</li>
+</ul>
+</section>
+<section id="やりかた雑に" class="slide level2">
+<h2>やりかた(雑に</h2>
+<ul>
+<li>1クロックに一つ命令を読む</li>
+<li>マルチプレクサとかで解読</li>
+<li>計算</li>
+<li>はじめにもどる</li>
+</ul>
+</section>
+<section id="ossです-tmpla" class="slide level2">
+<h2>OSSです: tmpla</h2>
+<p><a href="https://github.com/eliza0x/tmpla">eliza0x/tmpla</a></p>
+</section>
+<section id="ためしにうごかしてみます" class="slide level2">
+<h2>ためしにうごかしてみます</h2>
+</section>
+<section id="section-4" class="slide level2" data-background="kosen14s.png">
+<h2></h2>
+</section>
+<section id="まとめ" class="slide level2">
+<h2>まとめ</h2>
+<ul>
+<li>わりとCPUはつくれる</li>
+<li>わりとコンパイラもつくれる</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
