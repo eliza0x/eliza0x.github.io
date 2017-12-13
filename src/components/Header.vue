@@ -1,27 +1,28 @@
 <template lang="pug">
-nav.grey.darken-4
-	.nav-wrapper
-		.container
-			a(href="/#/").blog-title のばなしうさぎ
-			ul#nav-mobile.right.hide-on-med-and-down
-				li
-					a(href="/#/").orange.darken-4 Home
-				li
-					a(href="/#/posts") Posts
+nav.orange.darken-4
+  .nav-wrapper
+    .container
+      a(href="/#/").blog-title のばなしうさぎ
+      ul(id="mobile-demo").right.hide-on-med-and-down
+        li
+          a(href="/#/").link Home
+        li
+          a(href="/#/Posts").link Posts
+        li
+          a(href="/#/Slides").link Slides
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  data () {
-    return {
-    }
-  }
+  name: 'Header'
 }
 </script>
 
 <style scoped lang="stylus">
 .blog-title
-  font-size 1.7rem
+  font-size 1.9rem
   margin 0rem 1rem
+
+.link
+  font-size 1.3rem
 </style>
