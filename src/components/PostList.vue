@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  section
     ul
       li(id="article-list" v-for="article in articleList")
         a(:href="article.uri").clear-color
