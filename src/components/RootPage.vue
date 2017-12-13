@@ -1,19 +1,15 @@
 <template lang="pug">
 main 
-  .parallax-container.parallax-height-top
-    .parallax
-      img(src="/static/images/parallax1.jpeg")
   .section.white
     .container.row
       .col.s12
         main
           h3 最近の投稿 
           postlist-components(:count=5, :tagFilter=false)
-          h5 
-            a(href="/#/posts").grey-text.text-darken-2 And more ...
-  .parallax-container.parallax-height-bottom
-    .parallax
-      img(src="/static/images/parallax2.jpeg")
+          .card
+            h5.card-content.center.grey.lighten-4
+                a(href="/#/posts")
+                    .grey-text.text-darken-2 And more ...
 </template>
 
 <script>

@@ -4,14 +4,14 @@ div.container
         main#article.col.s12
             header
                 h1 {{ currentPage.title }}
-                div.chip 
+                div.chip.auther
                     img(:src="\"/static/images/\"+currentPage.auther+\".jpeg\"" alt="Auther ")
                     | auther: {{ currentPage.auther }}
                 div(v-for="tag in currentPage.tags").chip 
                     a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}
                 p date: {{ currentPage.date }}
 
-            section(id="html" v-html="html")
+            article(id="html" v-html="html")
 </template>
 
 <script>
@@ -85,10 +85,9 @@ export default {
   }
 }
 </script>
-
-<style>
-#article a {
+ 
+<style lang="stylus">
+#article a
     color: #777;
     font-weight: 900;
-}
 </style>

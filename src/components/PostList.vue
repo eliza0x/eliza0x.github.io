@@ -6,12 +6,12 @@
           .card.grey.lighten-4
             .card-content
               span.card-title.article-title {{ article.title }}
-              div.chip 
+              div.chip.auther
                 img(:src="\"/static/images/\"+article.auther+\".jpeg\"" alt="Auther ")
                 | auther: {{ article.auther }}
               div(v-for="tag in article.tags").chip 
                 a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}
-              p {{ article.description }}
+              p.description {{ article.description }}
 </template>
 
 <script>
@@ -42,8 +42,7 @@ p
 .clear-color
   color #222
 
-.tag
-  color: #444
-
+.description
+  margin 0.6rem 0.2rem !important
 </style>
 

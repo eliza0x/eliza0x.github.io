@@ -23,5 +23,17 @@ for i in (1..5)
   .h{i}
     &::before
       content "# "
-      color   #e65100
+
+.auther 
+    color: #777;
+    font-weight: 900;
+
+.tag
+    color: #777;
+    font-weight: 900;
+
+.clear-color 
+    color: #222
+    font-weight: 400;
+
 </style>

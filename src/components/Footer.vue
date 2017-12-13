@@ -28,10 +28,6 @@
 
 <script>
 export default {
-  name: 'FooterComponents',
-  data () {
-    return {
-    }
-  }
+  name: 'FooterComponents'
 }
 </script>
