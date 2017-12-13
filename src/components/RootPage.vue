@@ -7,8 +7,15 @@ main
           h3 最近の投稿 
           postlist-components(:count=5, :tagFilter=false)
           .card
-            h5.card-content.center.grey.lighten-4
+            p.card-content.center.grey.lighten-4.flow-text
                 a(href="/#/posts")
+                    .grey-text.text-darken-2 And more ...
+      .col.s12
+          h3 最近作成したスライド
+          slidelist-components(:count=5)
+          .card
+            p.card-content.center.grey.lighten-4.flow-text
+                a(href="/#/slides")
                     .grey-text.text-darken-2 And more ...
 </template>
 
@@ -16,7 +23,9 @@ main
 import $ from 'jquery'
 import Vue from 'vue'
 import PostList from './PostList.vue'
+import SlideList from './SlideList.vue'
 Vue.component('postlist-components', PostList)
+Vue.component('slidelist-components', SlideList)
 
 export default {
   name: 'RootPage',

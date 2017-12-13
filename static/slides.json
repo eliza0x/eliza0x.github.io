@@ -1,0 +1,72 @@
+[
+  {
+    "title": "CPU設計プロジェクト中間報告",
+    "auther": "eliza",
+    "date": "2017/12/6", 
+    "uri":"http://slides.com/eliza0x/cpu/fullscreen",
+    "description": "幣学で行われているCPU設計プロジェクトの中間報告発表会で使ったスライドです。内容はない。"
+  },
+  {
+    "title": "CPU気持ち入門",
+    "auther": "eliza",
+    "date": "2017/12/9", 
+    "uri":"http://slides.com/eliza0x/deck/fullscreen",
+    "description": "Cのコードをハンドアセンブルする記事です。ほとんど前提知識はありません。OITLT#3で使用したものです。"
+  },
+  {
+    "title": "VPPRによるネットワークの冗長化",
+    "auther": "eliza",
+    "date": "2017/12/1", 
+    "uri":"/static/slides/VRRP.pdf",
+    "description": "進捗を守るためにデフォルトゲートウェイを冗長化する話です。中身はない。"
+  },
+  {
+    "title": "再帰処理",
+    "auther": "eliza",
+    "date": "2017-10-28", 
+    "uri":"https://hackmd.io/p/BkuFD6uaZ#/",
+    "description": "再帰処理について書きました。DFSを解説しています。C++の基本的なコードで解説しています。"
+  },
+  {
+    "title": "再起構造",
+    "auther": "eliza",
+    "date": "2017/10/18", 
+    "uri":"https://hackmd.io/p/rJKhlXmTZ#/",
+    "description": "再起構造について書きました。C++の基本的なコードで解説しています。"
+  },
+  {
+    "title": "自作CPUで自作プログラミング言語を動かしたいだけの人生だった",
+    "auther": "eliza",
+    "date": "2017/10/7", 
+    "uri": "/static/slides/tmpla/",
+    "description": "自作コンパイラを自作CPUの上で動かそうとした話です。"
+  },
+  {
+    "title": "プログラミング入門",
+    "auther": "eliza",
+    "date": "2017/04/20", 
+    "uri": "/static/slides/Mikan.pdf",
+    "description": "自然数の定義からスクリプト言語を作った話です。"
+  },
+  {
+    "title": "プログラマのための音楽入門以前",
+    "auther": "eliza",
+    "date": "2016/08/13", 
+    "uri": "/static/slides/Music.pdf",
+    "description": "音が鳴るとたのしい。"
+  },
+  {
+    "title": "すごいEsperantoたのしく学ぼう!",
+    "auther": "eliza",
+    "date": "2016/08/12", 
+    "uri": "/static/slides/LYAEFGG.pdf",
+    "description": "エスペラント語でおk。"
+  },
+  {
+    "title": "Arduino入門",
+    "auther": "eliza",
+    "date": "2016/07/21", 
+    "uri": "/static/slides/Arduino.pdf",
+    "description": "工業高校生のために書いたC言語入門です。"
+  }
+]

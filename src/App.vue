@@ -1,7 +1,7 @@
 <template lang="pug">
 section#app
     header-components#head
-    router-view
+    router-view#main
     footer-components
 </template>
 
@@ -20,20 +20,20 @@ Vue.component('footer-components', Footer)
 
 <style lang="stylus">
 for i in (1..5)
-  .h{i}
+  #main h{i}
     &::before
       content "# "
+      color #e65100
 
 .auther 
-    color: #777;
-    font-weight: 900;
+    color #777
+    font-weight 900
 
 .tag
-    color: #777;
-    font-weight: 900;
+    color #777
+    font-weight 900
 
 .clear-color 
-    color: #222
-    font-weight: 400;
-
+    color #222
+    font-weight 400
 </style>
