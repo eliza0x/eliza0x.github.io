@@ -1,5 +1,14 @@
 [
   {
+    "title": "VFDで時計を作りたい話",
+    "auther": "eliza",
+    "date": "2017/12/25", 
+    "tags":["circuit"],
+    "uri":"/#/posts/vfd.html",
+    "file":"/static/posts/vfd.md",
+    "description": "蛍光表示管めっちゃかっこよくないですか"
+  },
+  {
     "title": "これはらりょすです",
     "auther": "eliza",
     "date": "2017/12/13", 
