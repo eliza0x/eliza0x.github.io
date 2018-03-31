@@ -1,12 +1,12 @@
 [
   {
-    "title": "VFDで時計を作りたい話",
+    "title": "RUPC2018に参加してきました",
     "auther": "eliza",
-    "date": "2017/12/25", 
-    "tags":["circuit"],
-    "uri":"/#/posts/vfd.html",
-    "file":"/static/posts/vfd.md",
-    "description": "蛍光表示管めっちゃかっこよくないですか"
+    "date": "2018/03/31", 
+    "tags":[],
+    "uri":"/#/posts/RUPC2018.html",
+    "file":"/static/posts/RUPC2018.md",
+    "description": "RUPCに参加してきました。"
   },
   {
     "title": "これはらりょすです",
