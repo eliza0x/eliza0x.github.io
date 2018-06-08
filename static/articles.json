@@ -1,5 +1,14 @@
 [
   {
+    "title": "プログラミング言語を作りました",
+    "auther": "eliza",
+    "date": "2018/06/08", 
+    "tags":["kosen14s","programming","haskell"],
+    "uri":"/#/posts/cotton.html",
+    "file":"/static/posts/cotton.md",
+    "description": "突然発生した連休を使ってプログラミング言語を作りました。Haskell, LLVMで出来ています。構造体を扱えるようになるのが当面の目標です。"
+  },
+  {
     "title": "RUPC2018に参加してきました",
     "auther": "eliza",
     "date": "2018/03/31", 
