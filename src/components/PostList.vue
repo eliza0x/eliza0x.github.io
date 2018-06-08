@@ -1,17 +1,13 @@
 <template lang="pug">
   section
-    ul
-      li(id="article-list" v-for="article in articleList")
-        a(:href="article.uri").clear-color
-          .card.grey.lighten-4
-            .card-content
-              span.card-title.article-title {{ article.title }}
-              div.chip.auther
-                img(:src="\"/static/images/\"+article.auther+\".jpeg\"" alt="Auther ")
-                | auther: {{ article.auther }}
-              div(v-for="tag in article.tags").chip 
-                a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}
-              p.description {{ article.description }}
+    ul(id="article-list")
+      li(v-for="article in articleList").post
+        div 
+          h3 
+            a(:href="article.uri") {{ article.title }}
+        div tags:
+          a(:href="\"/#/tags/\"+tag" v-for="tag in article.tags").tag \#{{ tag }}
+        p {{ article.description }}
 </template>
 
 <script>
@@ -35,14 +31,27 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-p
-  margin 1rem 0rem
-  font-size 1.1rem
-.clear-color
-  color #222
+<style scoped>
+.tag {
+    display: inline;
+    margin-left: 0.5rem;
+}
 
-.description
-  margin 0.6rem 0.2rem !important
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:not(:first-child) {
+    border-top: dotted 1px #222; 
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
 </style>
-

@@ -1,15 +1,11 @@
 <template lang="pug">
-nav.orange.darken-4
-  .nav-wrapper
-    .container
-      a(href="/#/").blog-title のばなしうさぎ
-      ul(id="mobile-demo").right.hide-on-med-and-down
-        li
-          a(href="/#/").link Home
-        li
-          a(href="/#/Posts").link Posts
-        li
-          a(href="/#/Slides").link Slides
+nav
+  div.logo
+    a(href="/#/").logo のばなしうさぎ
+  div.nav
+    a(href="/#/") Home
+    a(href="/#/Posts") Posts
+    a(href="/#/Slides") Slides
 </template>
 
 <script>
@@ -18,11 +14,24 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
-.blog-title
-  font-size 1.9rem
-  margin 0rem 1rem
+<style scoped>
+.nav {
+    text-align: right;
+}
+.nav a {
+    margin-right: 3rem;
+}
+.logo {
+    text-align: left;
+    color: #222;
+}
 
-.link
-  font-size 1.3rem
+nav {
+    border-bottom: solid 1px #222;
+    margin-bottom: 5rem;
+}
+
+nav a {
+    margin-right: 2rem;
+}
 </style>

@@ -1,22 +1,17 @@
 <template lang="pug">
-div.container
-    section.row
-        main#article.col.s12
-            header
-                h1 {{ currentPage.title }}
-                div.chip.auther
-                    img(:src="\"/static/images/\"+currentPage.auther+\".jpeg\"" alt="Auther ")
-                    | auther: {{ currentPage.auther }}
-                div(v-for="tag in currentPage.tags").chip 
-                    a(:href="\"/#/tags/\"+tag").tag \#{{ tag }}
-                p date: {{ currentPage.date }}
-
-            article(id="html" v-html="html")
+main
+  header
+    h1 {{ currentPage.title }}
+    nav
+      | tags: 
+      a(v-for="tag in currentPage.tags" :href="\"/#/tags/\"+tag") \#{{ tag }}
+      time date: {{ currentPage.date }}
+  
+  article(id="html" v-html="html")
 </template>
 
 <script>
 import axios from 'axios'
-import materialize from 'materialize-css'
 import articleInfo from '../../static/articles.json'
 
 function comipleMarkdown (data) {
@@ -80,14 +75,18 @@ export default {
         })
     },
     toast: function () {
-      materialize.toast('記事の取得に失敗しました', 4000)
+      console.log('記事の取得に失敗しました。')
     }
   }
 }
 </script>
  
-<style lang="stylus">
-#article a
-    color: #777;
-    font-weight: 900;
+<style scoped>
+nav a {
+  margin-right: 1rem;   
+}
+
+time {
+  display: block;
+}
 </style>

@@ -1,11 +1,7 @@
 <template lang="pug">
 main 
-  .container
-    .row
-      .col.s12
-        main
-          h3 Tag: {{ tag }} のついているページ
-          postlist-components(:count="100000", :tagFilter="true", :tag="tag")
+    h3 Tag: {{ tag }} のついているページ
+    postlist-components(:count="100000", :tagFilter="true", :tag="tag")
 </template>
 
 <script>

@@ -1,11 +1,6 @@
 <template lang="pug">
 main 
-  .container
-    .row
-      .col.s12
-        main
-          h3 投稿一覧
-          postlist-components(:count=100000, :tagFilter=false)
+    postlist-components(:count=100000, :tagFilter=false)
 </template>
 
 <script>
@@ -17,10 +12,4 @@ export default {
   name: 'RootPage'
 }
 </script>
-
-<style lang="stylus">
-p
-  margin 1rem 0rem
-  font-size 1.1rem
-</style>
 
