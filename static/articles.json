@@ -1,5 +1,14 @@
 [
   {
+    "title": "Vortex CORE",
+    "auther": "eliza",
+    "date": "2018/06/11", 
+    "tags":["programming"],
+    "uri":"/#/posts/vortex-core.html",
+    "file":"/static/posts/vortex-core.md",
+    "description": "よくわからない買い物をしたので記録しておきます。"
+  },
+  {
     "title": "プログラミング言語を作りました",
     "auther": "eliza",
     "date": "2018/06/08", 
