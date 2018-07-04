@@ -10,7 +10,7 @@
 
 普段はシェルスクリプトで危険なコマンドを隠蔽して実行させたりする術を研究したりしているみたいです。競技プログラミングではC#をつかっているようです。経験豊富です。
 
-[xztaityozxのICPC国内模擬予選参加記](https://xztaityozx.hatenablog.com/entry/2018/07/02/235222/)
+- [xztaityozxのICPC国内模擬予選参加記 - たいちょーの雑記](http://xztaityozx.hatenablog.com/entry/2018/07/02/235222)
 
 ### wheson
 
