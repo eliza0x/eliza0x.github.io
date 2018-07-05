@@ -38,6 +38,12 @@ li {
     list-style-type: none;
 }
 
+li:not(:first-child) {
+    border-top: dotted 1px #222; 
+}
+
 h3 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 </style>
