@@ -9,12 +9,8 @@ import SlideListPage from '@/components/SlideListPage'
 import TagPageListPage from '@/components/TagPageListPage'
 
 Vue.use(Router)
-Vue.use(VueAnalytics, {
-  id: 'UA-110094040-1',
-  Router
-})
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -43,3 +39,10 @@ export default new Router({
     }
   ]
 })
+
+Vue.use(VueAnalytics, {
+  id: 'UA-110094040-1',
+  router
+})
+
+export default router
