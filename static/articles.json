@@ -1,12 +1,21 @@
 [
   {
+    "title": "ICPC 2018 国内予選参加記",
+    "auther": "eliza",
+    "date": "2018/07/06", 
+    "tags":["oit", "programming"],
+    "uri":"/#/posts/icpc-2018.html",
+    "file":"/static/posts/icpc-2018.md",
+    "description":"ICPC国内予選に敗退しました。"
+  },
+  {
     "title": "ICPC 2018 国内模擬予選参加記",
     "auther": "eliza",
     "date": "2018/07/05", 
     "tags":["oit", "programming"],
     "uri":"/#/posts/preicpc-2018.html",
     "file":"/static/posts/preicpc-2018.md",
-    "description":"ICPC国内予選に参加しました。"
+    "description":"ICPC国内模擬予選に勝利しました。"
   },
   {
     "title": "Vortex CORE",
