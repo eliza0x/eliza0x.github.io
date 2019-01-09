@@ -1,5 +1,14 @@
 [
   {
+    "title": "ポケモンを始めた",
+    "auther": "eliza",
+    "date": "2019/01/09", 
+    "tags":["pokemon"],
+    "uri":"/#/posts/pokemon.html",
+    "file":"/static/posts/pokemon.md",
+    "description":"ポケモンを始めたので構築を紹介します、もちろんフルアタ。"
+  }, 
+  {
     "title": "ICPC 2018 国内予選参加記",
     "auther": "eliza",
     "date": "2018/07/06", 
