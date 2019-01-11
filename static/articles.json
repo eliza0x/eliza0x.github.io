@@ -1,5 +1,14 @@
 [
   {
+    "title": "生活が壊れた",
+    "auther": "eliza",
+    "date": "2019/01/11", 
+    "tags":["oit"],
+    "uri":"/#/posts/school_life.html",
+    "file":"/static/posts/school_life.md",
+    "description":"生活が崩壊した。"
+  },
+  {
     "title": "ポケモンを始めた",
     "auther": "eliza",
     "date": "2019/01/09", 
