@@ -1,5 +1,13 @@
 [
   {
+    "title": "この春やってたこと",
+    "auther": "eliza",
+    "date": "2019/04/08", 
+    "tags":[],
+    "uri":"/#/posts/2019-spring.html",
+    "file":"/static/posts/2019-spring.md",
+    "description":"バイトとかFPSをやってた。"
+  },  {
     "title": "生活が壊れた",
     "auther": "eliza",
     "date": "2019/01/11", 
@@ -129,7 +137,7 @@
     "title": "音楽の文法",
     "auther": "eliza",
     "date": "2016/11/07", 
-    "tags":["memo"],
+    "tags":[""],
     "uri":"/#/posts/grammar-of-music.html",
     "file":"/static/posts/grammar-of-music.md",
     "description": "高校三年間つづけた部活も、もうしばらくすれば引退です。"
