@@ -1,13 +1,14 @@
 [
   {
-    "title": "この春やってたこと",
+    "title": "ICPC 2019 国内予選参加記",
     "auther": "eliza",
-    "date": "2019/04/08", 
-    "tags":[],
-    "uri":"/#/posts/2019-spring.html",
-    "file":"/static/posts/2019-spring.md",
-    "description":"バイトとかFPSをやってた。"
-  },  {
+    "date": "2019/07/15", 
+    "tags":["oit"],
+    "uri":"/#/posts/icpc-2019.html",
+    "file":"/static/posts/icpc-2019.md",
+    "description":"ICPC国内予選にまた敗退しました。"
+  },
+  {
     "title": "生活が壊れた",
     "auther": "eliza",
     "date": "2019/01/11", 
@@ -137,7 +138,7 @@
     "title": "音楽の文法",
     "auther": "eliza",
     "date": "2016/11/07", 
-    "tags":[""],
+    "tags":["memo"],
     "uri":"/#/posts/grammar-of-music.html",
     "file":"/static/posts/grammar-of-music.md",
     "description": "高校三年間つづけた部活も、もうしばらくすれば引退です。"
