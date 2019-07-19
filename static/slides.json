@@ -1,5 +1,12 @@
 [
   {
+    "title": "GC入門",
+    "auther": "eliza",
+    "date": "2019/4/19", 
+    "uri":"/static/slides/intro-gc/",
+    "description": "GCの入門資料です。"
+  },
+  {
     "title": "CPU設計プロジェクト中間報告",
     "auther": "eliza",
     "date": "2017/12/6", 
