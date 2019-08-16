@@ -1,5 +1,14 @@
 [
   {
+    "title": "自撮りについて",
+    "auther": "eliza",
+    "date": "2019/08/16", 
+    "tags":["memo"],
+    "uri":"/#/posts/selfies.html",
+    "file":"/static/posts/selfies.md",
+    "description":"自撮りやめらんねぇな？"
+  },
+  {
     "title": "ICPC 2019 国内予選参加記",
     "auther": "eliza",
     "date": "2019/07/15", 
