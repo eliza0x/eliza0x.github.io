@@ -1,5 +1,14 @@
 [
   {
+    "title": "Shell自作(Rust入門)した際の記録",
+    "auther": "eliza",
+    "date": "2019/10/28", 
+    "tags":["programming"],
+    "uri":"/#/posts/write_a_shell_in_rust.html",
+    "file":"/static/posts/write_a_shell_in_rust.md",
+    "description":"Shellをはじめて書くRustで自作しました。"
+  },
+  {
     "title": "自撮りについて",
     "auther": "eliza",
     "date": "2019/08/16", 
