@@ -1,5 +1,14 @@
 [
   {
+    "title": "初めて吸ったタバコは野焼きみたいな香りがした",
+    "auther": "eliza",
+    "date": "2019/12/01", 
+    "tags":["programming"],
+    "uri":"/#/posts/ciger.html",
+    "file":"/static/posts/ciger.md",
+    "description":"もういいかな。"
+  },
+  {
     "title": "Shell自作(Rust入門)した際の記録",
     "auther": "eliza",
     "date": "2019/10/28", 
