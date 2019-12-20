@@ -1,5 +1,14 @@
 [
   {
+    "title": "MIPS R10Kのアーキテクチャ",
+    "auther": "eliza",
+    "date": "2019/12/21", 
+    "tags":["architecture"],
+    "uri":"/#/posts/r10k.html",
+    "file":"/static/posts/r10k.md",
+    "description":"MIPS R10Kの投機的実行とレジスタリネーミングのアルゴリズムを調べたのでメモ。"
+  },
+  {
     "title": "初めて吸ったタバコは野焼きみたいな香りがした",
     "auther": "eliza",
     "date": "2019/12/01", 
