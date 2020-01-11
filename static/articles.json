@@ -1,5 +1,14 @@
 [
   {
+    "title": "平穏な生活のためのプラクティス",
+    "auther": "eliza",
+    "date": "2020/1/12", 
+    "tags":["memo"],
+    "uri":"/#/posts/thought2020.html",
+    "file":"/static/posts/thought2020.md",
+    "description":"[WIP] 平穏に生活するために取り組んだことや考察"
+  },
+  {
     "title": "MIPS R10Kのアーキテクチャ",
     "auther": "eliza",
     "date": "2019/12/21", 
