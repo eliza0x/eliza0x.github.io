@@ -1,6 +1,4 @@
-# BOOM(Barkeley Out of Order Machine)のアーキテクチャ
-
-[BOOM](https://boom-core.org/)はBarkeley Architecture Reserchの設計したCPUで、スーパースカラ、OoO、投機的実行等をサポートしており、[Chisel](https://www.chisel-lang.org/)^[Scala上のDSLとして構築されたハードウェア記述言語]で設計されたRISC-V ISA^[オープンソースのRISC命令セット]のCPU で、設計の上ではMIPS R10000(以降R10K)とAlpha21264のアーキテクチャに大きく影響されているらしい。
+[BOOM(Barkeley Out of Order Machine)](https://boom-core.org/)はBarkeley Architecture Reserchの設計したCPUで、スーパースカラ、OoO、投機的実行等をサポートしており、[Chisel](https://www.chisel-lang.org/)^[Scala上のDSLとして構築されたハードウェア記述言語]で設計されたRISC-V ISA^[オープンソースのRISC命令セット]のCPU で、設計の上ではMIPS R10000(以降R10K)とAlpha21264のアーキテクチャに大きく影響されているらしい。
 
 [R10Kのアーキテクチャについては以前軽く書いた](https://eliza.link/#/posts/r10k.html)ので、それを参考にしてほしい。
 
