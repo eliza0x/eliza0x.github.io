@@ -2,6 +2,15 @@
   {
     "title": "平穏な生活のためのプラクティス",
     "auther": "eliza",
+    "date": "2020/1/14", 
+    "tags":["architecture"],
+    "uri":"/#/posts/BOOM.html",
+    "file":"/static/posts/BOOM.md",
+    "description":"BOOMのアーキテクチャについて調べました"
+  },
+  {
+    "title": "平穏な生活のためのプラクティス",
+    "auther": "eliza",
     "date": "2020/1/12", 
     "tags":["memo"],
     "uri":"/#/posts/thought2020.html",
