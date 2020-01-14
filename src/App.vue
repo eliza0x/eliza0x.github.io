@@ -19,8 +19,20 @@ Vue.component('footer-components', Footer)
 </script>
 
 <style lang="stylus">
+body a
+  color: #4a4a4a;
+  text-decoration: underline;
+  &:hover
+    color: #DF3A01;
+    text-decoration: none;
+    border-bottom: none;
+
+#main
+  font-family serif
+
 for i in (1..5)
   #main h{i}
+    font-family sans-serif
     &::before
       content "# "
 </style>

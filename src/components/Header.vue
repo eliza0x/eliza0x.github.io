@@ -27,8 +27,11 @@ export default {
 }
 
 nav {
-    border-bottom: solid 1px #222;
+    // border-bottom: solid 1px #222;
     margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
 }
 
 nav a {

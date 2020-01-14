@@ -2,8 +2,7 @@
 main 
     div
       postlist-components(:count=5, :tagFilter=false)
-      div
-        a(href="/#/posts") And more ...
+      a(href="/#/posts") もっと読む
 </template>
 
 <script>

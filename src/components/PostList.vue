@@ -35,6 +35,7 @@ export default {
 .tag {
     display: inline;
     margin-left: 0.5rem;
+    text-decoration: none;
 }
 
 ul {
@@ -47,11 +48,16 @@ li {
 }
 
 li:not(:first-child) {
-    border-top: dotted 1px #222; 
+    // border-top: dotted 1px #222; 
+    margin-top: 5rem;
 }
 
 h3 {
     margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
+}
+
+p {
+  margin: 0px;
 }
 </style>
