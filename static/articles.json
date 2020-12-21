@@ -1,5 +1,14 @@
 [
   {
+    "title": "面白かった技術書",
+    "auther": "eliza",
+    "date": "2020/12/21", 
+    "tags":["book"],
+    "uri":"/#/posts/book2020.html",
+    "file":"/static/posts/book2020.md",
+    "description": "おすすめの本を何冊か挙げます。他人に本をおすすめするのは脳の中を見られてるような気がしてあんまり得意じゃないんですけど……"
+  },
+  {
     "title": "BOOMのアーキテクチャ",
     "auther": "eliza",
     "date": "2020/1/14", 
