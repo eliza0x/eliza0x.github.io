@@ -1,5 +1,14 @@
 [
   {
+    "title": "F#触ってみた / Discordの入退室を通知するSlack Botを作った",
+    "auther": "eliza",
+    "date": "2021/05/05", 
+    "tags":["random"],
+    "uri":"/#/posts/2021-05-05.html",
+    "file":"/static/posts/2021-05-05.md",
+    "description": "F#たのしいです"
+  },
+  {
     "title": "その男、定職につき",
     "auther": "eliza",
     "date": "2021/04/13", 

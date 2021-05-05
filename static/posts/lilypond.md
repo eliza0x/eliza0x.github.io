@@ -20,7 +20,7 @@ LilypondはTeX同様、テキストからpdfを出力します、なのでバー
 
 Lilypondは容易に使用できるにかかわらず非常に強力です、以下に<http://lilypond.org/examples.ja.html>からの例を載せておきます。
 
-![](/static/images/LilypondExam2.png)
+![](/static/images/lilypond/LilypondExam2.png)
 
 [公式サイトのリファレンス](http://lilypond.org/doc/v2.18/Documentation/learning/index.ja.html)が充実しているので、それを読めば楽譜はひととおり書けるでしょう。
 
@@ -37,7 +37,7 @@ Lilypondは容易に使用できるにかかわらず非常に強力です、以
 
 以上のコードで
 
-![](/static/images/LilypondExam3.png)
+![](/static/images/lilypond/LilypondExam3.png)
 
 のような譜面ができます。ひとつずつ解説しましょう。
 
@@ -54,7 +54,7 @@ Lilypondは容易に使用できるにかかわらず非常に強力です、以
 }
 ```
 
-![](/static/images/LilypondExam5.png)
+![](/static/images/lilypond/LilypondExam5.png)
 
 - `\relative`で相対的に記述を行うことができます。
 - `|`で小節を明示的に区切ることができます。自動でも区切られますが、あえて示す事によって一小節に音が足りない場合を検知してくれるのでミスが減ります。
@@ -68,7 +68,7 @@ Lilypondは容易に使用できるにかかわらず非常に強力です、以
 }
 ```
 
-![](/static/images/LilypondExam4.png)
+![](/static/images/lilypond/LilypondExam4.png)
 
 - 音の後の数字で長さを指定します。
 - `\key`で調を指定しています。
@@ -82,7 +82,7 @@ Lilypondは容易に使用できるにかかわらず非常に強力です、以
 }
 ```
 
-![](/static/images/LilypondExam6.png)
+![](/static/images/lilypond/LilypondExam6.png)
 
 - `<`と`>`で囲んだ範囲が和音になります。
 - `(`と`)`で囲んだ範囲がスラーになります。
@@ -97,7 +97,7 @@ Lilypondは容易に使用できるにかかわらず非常に強力です、以
 }
 ```
 
-![](/static/images/LilypondExam7.png)
+![](/static/images/lilypond/LilypondExam7.png)
 
 - 各アーテュキレーションも付ける事ができます。
 - `\!`でクレセンド、デクレセンドの終端になります。
@@ -125,7 +125,7 @@ Lilypondは容易に使用できるにかかわらず非常に強力です、以
 }
 ```
 
-![](../images/LilypondExam8.png)
+![](../images/lilypond/LilypondExam8.png)
 
 - `\time 4/4`で四分の四拍子であることを明示。^[この例の場合はしなくても良い]
 - `-es`、`-is`でシャープ、フラット

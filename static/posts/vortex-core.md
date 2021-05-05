@@ -1,16 +1,16 @@
 こんにちは、読者諸賢はお買い物を健全に楽しんでいることと思います。あまり賢くない私は食費を削ってこんなものを買ってしまいました。
 
-![Vortex Coreを上から見た図](/static/images/VortexCore.jpg)
+![Vortex Coreを上から見た図](/static/images/vortexcore/VortexCore.jpg)
 
 なんと言っても初めに目につくのは小ささでしょうか？ファンクションキーがない、数字が無い、記号も無い、ヘンテコなキーボードです。でも、ご安心ください、手前から覗き込んでみましょう。
 
-![Vortex Coreを正面から見た図](/static/images/VortexCoreFront.jpg)
+![Vortex Coreを正面から見た図](/static/images/vortexcore/VortexCoreFront.jpg)
 
 あっ……
 
 察した方も多いんじゃないでしょうか、そうです、このキーボードは２つあるFunctionキーを組み合わせ4つのモードを操って入力するのです。
 
-![Vortex Coreを操作している図](/static/images/VortexCoreTop.jpg)
+![Vortex Coreを操作している図](/static/images/vortexcore/VortexCoreTop.jpg)
 
 あぁ……
 
@@ -24,7 +24,7 @@
 
 なんと言ってもこのキーボードはサイズがめちゃめちゃ小さいです。キーのサイズをそのままにフルサイズキーボードの40%ほどの大きさしかありません。このキーボードがVortex Coreたる所以です。
 
-![Vortex Coreのサイズ](/static/images/VortexCoreSizeof.jpg)
+![Vortex Coreのサイズ](/static/images/vortexcore/VortexCoreSizeof.jpg)
 
 私がVortex Coreを買うまでの間、私はMajestouchのテンキーレスモデルを使っていました。フルサイズのキーボードの80%ぐらいのサイズ感でしょうか？とにかく使いやすく愛用していました。そのうちそのキーボードじゃないとストレスすら感じるようになってきたので、どこに行く時も持ち歩くようになりました。ですが、しばらくするとそのサイズ感が問題になってきたのです。小さなカバンに入らない、キーボードが重い(安定感を増すために底に鉄板が入っているそうです)、何よりそのキーボードがどんどん傷んでいく。
 
@@ -50,12 +50,12 @@
 
 試しに全角/半角キーを押してみましょう。これはJP配列ではなくUS配列(アメリカ企画)のキーボードであるためです、MacやLinuxの上でUS配列を使って全角/半角を実現するにはCtrl+Spaceを押せば良いです。これは簡単です。
 
-![VortexCoreでCtrlとSpaceを入力](/static/images/VortexCoreCtrlSpace.jpg)
+![VortexCoreでCtrlとSpaceを入力](/static/images/vortexcore/VortexCoreCtrlSpace.jpg)
 
 
 では、Windowsで全角/半角キーを実現しましょう。
 
-![VortexCoreで~とAltを入力](/static/images/VortexCoreChildaAlt.jpg)
+![VortexCoreで~とAltを入力](/static/images/vortexcore/VortexCoreChildaAlt.jpg)
 
 やってらんないよ。一つのキーに複数の機能をもたせる必要があるのは分かるので、ファンクションキーが複数あるのは分かるのですが、もう少し配置に工夫は出来なかったのでしょうか。
 
@@ -64,4 +64,3 @@
 # 終わりに
 
 この記事を書いていたら変な配列にも少し慣れてきました。今後はプログラムを書く時に差し支えがなけれな良いのですが。
-
