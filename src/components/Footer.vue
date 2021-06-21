@@ -1,6 +1,6 @@
 <template lang="pug">
 footer
-  p 情報系大学生です。プログラミング言語, コンパイラ, CPUに感心があります。楽しいものを見つけていきたいと思っています。
+  p 関数型言語, プログラミング言語制作, 低レイヤに感心があります。楽しいものを見つけていきたいと思っています。
   nav
     a(href="https://github.com/eliza0x") Github
     a(href="https://twitter.com/Eliza_0x") Twitter
