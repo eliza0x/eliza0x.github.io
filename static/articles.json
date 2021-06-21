@@ -1,5 +1,14 @@
 [
   {
+    "title": "C# RxでCancellableな計算をスマートに生やす",
+    "auther": "eliza",
+    "date": "2021/06/21", 
+    "tags":["C#"],
+    "uri":"/#/posts/cancellable_computation_on_rx.html",
+    "file":"/static/posts/cancellable_computation_on_rx.md",
+    "description": "C# RxでCancellableな計算をスマートに生やす方法"
+  },
+  {
     "title": "F#触ってみた / Discordの入退室を通知するSlack Botを作った",
     "auther": "eliza",
     "date": "2021/05/05", 
