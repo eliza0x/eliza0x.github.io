@@ -7,12 +7,12 @@ Observable
     .Range(0, 10)
     .Select(i =>
     	Observable.StartAsync(async ct =>
-            await Task.Run(() => HeavyFunction(i, ct)))
-        .Switch())
-    .Subscribe(o => /* somthing... */);
+            await Task.Run(() => HeavyFunction(i, ct))))
+    .Switch()
+    .Subscribe(o => /* something... */);
 ```
 
 こういうふうに書くと, Task.Run内の計算が終わる前に次の値が流れた来た場合, SwitchでOnCompleteが呼ばれてCancellationTokenが呼ばれます。
 
-Rxは難しいが、たぶんRxでやろうとしてることが難しいから仕方ないと思う。
+Rx難しくて困ってるんですが、たぶんRxでやろうとしてることが難しいから仕方ないと思う。
 
