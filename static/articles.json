@@ -1,5 +1,14 @@
 [
   {
+    "title": "WPF ScrollViewerのVerticalOffsetをBindingする",
+    "auther": "eliza",
+    "date": "2021/07/07", 
+    "tags":["C#", "WPF"],
+    "uri":"/#/posts/binding_vertical_offset.html",
+    "file":"/static/posts/binding_vertical_offset.md",
+    "description": "Attached Propertyむずかしいです"
+  },
+  {
     "title": "C# RxでCancellableな計算をスマートに生やす",
     "auther": "eliza",
     "date": "2021/06/21", 
